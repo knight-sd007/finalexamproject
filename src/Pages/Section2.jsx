@@ -15,7 +15,7 @@ function Section2() {
 
   const filterEvenNumbers = (arrData) => {
     let add = arrData.filter((obj) => {
-      if (obj % 2 == 0) {
+      if (obj % 2 === 0) {
         return obj;
       }
       return null;
@@ -48,7 +48,7 @@ function Section2() {
             </button>
           </div>
           <div className='card-body text-white'>
-            {sum != "" ? `[2, 4, 5, 12, 25] sum of elements = ${sum}` : ""}
+            {sum !== "" ? `[2, 4, 5, 12, 25] sum of elements = ${sum}` : ""}
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@ function Section2() {
             </button>
           </div>
           <div className='card-body text-white'>
-            {even != ""
+            {even !== ""
               ? `[2, 4, 5, 12, 25] even number array = [${even}]`
               : ""}
           </div>
@@ -80,7 +80,7 @@ function Section2() {
             </button>
           </div>
           <div className='card-body text-white'>
-            {capSen != ""
+            {capSen !== ""
               ? `'This is a sentence.' with first letter capitalized = ${capSen}`
               : ""}
           </div>
@@ -97,7 +97,7 @@ function Section2() {
             </button>
           </div>
           <div className='card-body text-white'>
-            {revString != ""
+            {revString !== ""
               ? `'Accknowledge' reverse string = ${revString}`
               : ""}
           </div>
